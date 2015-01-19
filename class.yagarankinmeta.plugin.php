@@ -1,5 +1,5 @@
 <?php if (!defined('APPLICATION')) exit();
-/*	Copyright 2014 Zachary Doll
+/*	Copyright 2014-2015 Zachary Doll
 *	This program is free software: you can redistribute it and/or modify
 *	it under the terms of the GNU General Public License as published by
 *	the Free Software Foundation, either version 3 of the License, or
@@ -17,7 +17,7 @@ $PluginInfo['YagaRankInMeta'] = array(
 	'Name' => 'Yaga - Rank In Meta',
 	'Description' => 'Adds the User Rank to the author meta on discussions.',
 	'Version' => '1.0.1',
-	'RequiredApplications' => array('Yaga' => '0.5'),
+	'RequiredApplications' => array('Yaga' => '1.0'),
 	'MobileFriendly' => TRUE,
 	'Author' => 'Zachary Doll',
 	'AuthorEmail' => 'hgtonight@daklutz.com',
@@ -25,7 +25,7 @@ $PluginInfo['YagaRankInMeta'] = array(
 	'License' => 'GPLv3'
 );
 
-class Yaga_RankInMeta extends Gdn_Plugin {
+class YagaRankInMeta extends Gdn_Plugin {
 
   public function DiscussionController_AuthorInfo_Handler($Sender) {
     $Author = $Sender->EventArguments['Author'];
