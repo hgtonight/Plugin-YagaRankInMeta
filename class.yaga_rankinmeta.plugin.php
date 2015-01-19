@@ -16,7 +16,7 @@
 $PluginInfo['YagaRankInMeta'] = array(
 	'Name' => 'Yaga - Rank In Meta',
 	'Description' => 'Adds the User Rank to the author meta on discussions.',
-	'Version' => '1.0',
+	'Version' => '1.0.1',
 	'RequiredApplications' => array('Yaga' => '0.5'),
 	'MobileFriendly' => TRUE,
 	'Author' => 'Zachary Doll',
@@ -25,7 +25,7 @@ $PluginInfo['YagaRankInMeta'] = array(
 	'License' => 'GPLv3'
 );
 
-class YagaRankInMeta extends Gdn_Plugin {
+class Yaga_RankInMeta extends Gdn_Plugin {
 
   public function DiscussionController_AuthorInfo_Handler($Sender) {
     $Author = $Sender->EventArguments['Author'];
